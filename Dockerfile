@@ -3,6 +3,7 @@ MAINTAINER Ronen
 WORKDIR /usr/app
 COPY . .
 RUN npm install
-CMD ["node", "index.js"]
+ENV ENVEROMENT PRODUCTION
+ENTRYPOINT [ "executable" ] ["node", "index.js"]
 
 
